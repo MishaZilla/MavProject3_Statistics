@@ -8,9 +8,7 @@ public class StatsServiceTest {
     @Test
     public void findSum() {
         StatsService service = new StatsService();
-        int[] sales = {
-                16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19
-        };
+        long[] sales = {16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19};
 
         long expected = 538;
         long actual = service.getSum(sales);
@@ -20,9 +18,7 @@ public class StatsServiceTest {
     @Test
     public void mediumSum() {
         StatsService service = new StatsService();
-        int[] sales = {
-                16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19
-        };
+        long[] sales = {16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19};
 
         long expected = 44;
         long actual = service.getMediumSum(sales);
@@ -32,9 +28,7 @@ public class StatsServiceTest {
     @Test
     public void maxMonth() {
         StatsService service = new StatsService();
-        int[] sales = {
-                16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19
-        };
+        long[] sales = {16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19};
 
         long expected = 8;
         long actual = service.getMaxMonth(sales);
@@ -44,9 +38,7 @@ public class StatsServiceTest {
     @Test
     public void minMonth() {
         StatsService service = new StatsService();
-        int[] sales = {
-                16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19
-        };
+        long[] sales = {16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19};
 
         long expected = 11;
         long actual = service.getMinMonth(sales);
@@ -56,9 +48,7 @@ public class StatsServiceTest {
     @Test
     public void belowMedium() {
         StatsService service = new StatsService();
-        int[] sales = {
-                16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19
-        };
+        long[] sales = {16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19};
 
         long expected = 7;
         long actual = service.monthsBelowMedium(sales);
@@ -68,9 +58,7 @@ public class StatsServiceTest {
     @Test
     public void higherMedium() {
         StatsService service = new StatsService();
-        int[] sales = {
-                16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19
-        };
+        long[] sales = {16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19};
 
         long expected = 5;
         long actual = service.monthsHigherMedium(sales);

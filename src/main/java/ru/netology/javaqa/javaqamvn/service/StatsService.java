@@ -2,7 +2,7 @@ package ru.netology.javaqa.javaqamvn.service;
 
 public class StatsService {
 
-    public long getSum(int[] sales) {
+    public long getSum(long[] sales) {
 
         long findSum = 0;
         for (int i = 0; i < sales.length; i++) {
@@ -11,7 +11,7 @@ public class StatsService {
         return findSum; // Сумма всех продаж
     }
 
-    public long getMediumSum(int[] sales) {
+    public long getMediumSum(long[] sales) {
 
         long findSum = getSum(sales);
         long month = sales.length;
@@ -19,7 +19,7 @@ public class StatsService {
         return findMediumSum; // Средняя сумма продаж в месяц
     }
 
-    public long getMaxMonth(int[] sales) {
+    public long getMaxMonth(long[] sales) {
 
         int maxMonth = 0;
         for (int i = 0; i < sales.length; i++) {
@@ -30,7 +30,7 @@ public class StatsService {
         return maxMonth + 1; // Номер месяца, в котором был пик продаж, то есть осуществлены продажи на максимальную сумму
     }
 
-    public long getMinMonth(int[] sales) {
+    public long getMinMonth(long[] sales) {
 
         int minMonth = 0;
         for (int i = 0; i < sales.length; i++) {
@@ -41,7 +41,7 @@ public class StatsService {
         return minMonth + 1; // Номер месяца, в котором был минимум продаж, то есть осуществлены продажи на минимальную сумму
     }
 
-    public long monthsBelowMedium(int[] sales) {
+    public long monthsBelowMedium(long[] sales) {
 
         long findMediumSum = getMediumSum(sales);
         long monthBelowMedium = 0;
@@ -53,7 +53,7 @@ public class StatsService {
         return (monthBelowMedium); // Количество месяцев, в которых продажи были ниже среднего
     }
 
-    public long monthsHigherMedium(int[] sales) {
+    public long monthsHigherMedium(long[] sales) {
 
         long findMediumSum = getMediumSum(sales);
         long monthsHigherMedium = 0;
