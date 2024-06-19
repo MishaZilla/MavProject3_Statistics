@@ -44,7 +44,7 @@ public class StatsService {
     public long monthsBelowMedium(long[] sales) {
 
         long findMediumSum = getMediumSum(sales);
-        long monthBelowMedium = 0;
+        int monthBelowMedium = 0;
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] < findMediumSum) {
                 monthBelowMedium = monthBelowMedium + 1;
@@ -56,7 +56,7 @@ public class StatsService {
     public long monthsHigherMedium(long[] sales) {
 
         long findMediumSum = getMediumSum(sales);
-        long monthsHigherMedium = 0;
+        int monthsHigherMedium = 0;
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] > findMediumSum) {
                 monthsHigherMedium = monthsHigherMedium + 1;

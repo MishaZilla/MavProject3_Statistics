@@ -30,7 +30,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sales = {16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19};
 
-        long expected = 8;
+        int expected = 8;
         long actual = service.getMaxMonth(sales);
         Assertions.assertEquals(expected, actual);
     }
@@ -40,7 +40,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sales = {16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19};
 
-        long expected = 11;
+        int expected = 11;
         long actual = service.getMinMonth(sales);
         Assertions.assertEquals(expected, actual);
     }
@@ -50,7 +50,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sales = {16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19};
 
-        long expected = 7;
+        int expected = 7;
         long actual = service.monthsBelowMedium(sales);
         Assertions.assertEquals(expected, actual);
     }
@@ -60,7 +60,7 @@ public class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sales = {16, 42, 86, 14, 55, 67, 11, 142, 17, 64, 5, 19};
 
-        long expected = 5;
+        int expected = 5;
         long actual = service.monthsHigherMedium(sales);
         Assertions.assertEquals(expected, actual);
     }
